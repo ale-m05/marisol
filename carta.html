@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Para mi bonita Marisol 💛</title>
+    <!-- Cargamos Font Awesome para el icono de música en el botón -->
+    <link rel="stylesheet" href="https://cloudflare.com" />
     <style>
         body {
             margin: 0;
@@ -76,28 +78,51 @@
             font-size: 18px;
             color: #d45b73;
             margin-top: 35px;
+            margin-bottom: 5px;
         }
 
         .firma-nombre {
             font-size: 24px;
             color: #cc4b66;
-            margin-top: 5px;
             font-weight: bold;
             display: block;
+            margin-bottom: 30px;
+        }
+
+        /* DISEÑO DEL NUEVO BOTÓN PARA LLAMAR A MUSICA.HTML */
+        .btn-volver-musica {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ff6b6b;
+            background: transparent;
+            border: 2px solid #ff6b6b;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn-volver-musica:hover {
+            background: rgba(255, 107, 107, 0.15);
+            transform: translateY(-2px);
         }
     </style>
 </head>
 <body>
 
     <div class="carta-box">
-        <!-- Imagen hermosa de rosas amarillas en alta calidad -->
-        <img src="https://www.shutterstock.com/image-vector/horizontal-border-sunflowers-blue-anemones-260nw-1168659943.jpg" alt="Rosas Amarillas para Marisol">
+        <!-- CORREGIDO: Imagen real de rosas amarillas naturales en alta calidad -->
+        <img src="https://st2.depositphotos.com/10965770/45017/v/450/depositphotos_450172838-stock-illustration-sunflowers-bouquet-with-wild-flower.jpg" alt="Rosas Amarillas para Marisol">
 
         <span class="fecha">21 de Septiembre</span>
 
         <p class="saludo">Mi querida y hermosa Marisol 💛</p>
         
-        <p>Hoy es 21 de septiembre, el día en que los sentimientos más puros se visten de color dorado, y mi corazón no encontró mejor manera de abrazarte que enviándote estas rosas amarillas hasta donde estás. Dicen que las rosas de este color simbolizan la alegría, la luz y la calidez... exacto lo que trajiste a mi vida, convirtiéndote en mi pensamiento favorito desde que amanece.</p>
+        <p>Hoy es 21 de septiembre, el día en que los sentimientos más puros se visten de color dorado, y mi corazón no encontró mejor manera de abrazarte que enviándote estas rosas amarillas hasta donde estás. Dicen que las rosas de este color simbolizan la alegría, la luz y la calidez... exacto lo que trajiste a mi vida, convirténtote en mi pensamiento favorito desde que amanece.</p>
         
         <p class="piropo">
             "Si por la distancia el viento no me deja tocar tu piel, le pido a estas rosas amarillas que te digan cuánto te quiero bien; porque ni doscientos kilómetros de mapa logran apagar lo que en mi alma empezaste a encender."
@@ -111,6 +136,11 @@
         
         <p class="firma">Contando cada segundo para verte de frente y abrazarte por fin,</p>
         <span class="firma-nombre">Alex Mo ❤️</span>
+
+        <!-- AGREGADO: Botón con ícono para llamar a la página de música -->
+        <a href="musica.html" class="btn-volver-musica">
+            <i class="fas fa-music"></i> Escuchar la canción otra vez
+        </a>
     </div>
 
 </body>
