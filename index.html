@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un Regalo Especial</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ffe6f0, #ffd1dc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-box {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 40px 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 350px;
+            width: 90%;
+        }
+        h2 {
+            color: #ff6b6b;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 80%;
+            padding: 12px;
+            border: 2px solid #ffd1dc;
+            border-radius: 50px;
+            font-size: 16px;
+            text-align: center;
+            outline: none;
+            transition: 0.3s;
+        }
+        input:focus {
+            border-color: #ff6b6b;
+        }
+        button {
+            margin-top: 20px;
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 12px 35px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+        }
+        button:hover {
+            background: #f06595;
+            transform: translateY(-2px);
+        }
+        .error-msg {
+            color: #ff3333;
+            font-size: 14px;
+            margin-top: 15px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-box">
+    <h2>¿Tienes el código? 🌻</h2>
+    <p>Introduce nuestra clave especial para entrar</p>
+    
+    <input type="password" id="accessCode" placeholder="Escribe el código aquí...">
+    <br>
+    <button onclick="checkCode()">Entrar</button>
+    
+    <div class="error-msg" id="errorMessage">Código incorrecto, inténtalo de nuevo por favor. ❤️</div>
+</div>
+
+<script>
+function checkCode() {
+    const codeEntered = document.getElementById('accessCode').value;
+    // AQUÍ CAMBIAS EL CÓDIGO (Ejemplo: '1402')
+    const correctCode = '1402'; 
+
+    if (codeEntered === correctCode) {
+        window.location.href = "carta.html"; // Redirige a la página de música
+    } else {
+        document.getElementById('errorMessage').style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
